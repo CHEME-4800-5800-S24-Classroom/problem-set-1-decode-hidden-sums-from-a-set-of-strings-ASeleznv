@@ -4,5 +4,16 @@
 # ===== PRIVATE METHODS ABOVE HERE =================================================================================== #
 
 # ===== PUBLIC METHODS BELOW HERE =================================================================================== #
-# TODO: Make a build method to construct MyPuzzleRecordModel types
+"""
+    build(text::String)::MyPuzzleRecordModel
+
+Factory method to build an instance of the MyPuzzleRecordModel type. MyPuzzleRecordModel is a model of the
+information contained in the production.txt file
+"""
+function build(text::String)::MyPuzzleRecordModel
+
+  inst = MyPuzzleRecordModel(text)
+  return inst
+
+end
 # ===== PUBLIC METHODS ABOVE HERE =================================================================================== #

@@ -7,7 +7,7 @@ strings that are the substrings (starting from the first character) of
 length length_str on the words "one" through "nine". 
 """
 function _substring_genertor(length_str::Int64)
-    numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero"]
+    numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     rules = []
     for number in numbers
         if (length(number) <= length_str)
@@ -105,7 +105,7 @@ function decode_part_2(models::Dict{Int64,MyPuzzleRecordModel})::Tuple{Int64,Dic
     # ...
 
     word_to_number = Dict("one" => 1, "two" => 2, "three" => 3, "four" => 4, "five" => 5,
-        "six" => 6, "seven" => 7, "eight" => 8, "nine" => 9, "zero" => 0)
+        "six" => 6, "seven" => 7, "eight" => 8, "nine" => 9)
 
     for (line_number, record) in models
 

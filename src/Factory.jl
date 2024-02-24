@@ -7,8 +7,8 @@
 """
     build(text::String)::MyPuzzleRecordModel
 
-Factory method to build an instance of the MyPuzzleRecordModel type. MyPuzzleRecordModel is a model of the
-information contained in the production.txt file
+Factory method to build an instance of the MyPuzzleRecordModel type. 
+MyPuzzleRecordModel is a model of a line of text contained in the production.txt file
 """
 function build(text::String)::MyPuzzleRecordModel
 
